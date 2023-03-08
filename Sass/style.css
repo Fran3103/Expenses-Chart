@@ -16,6 +16,7 @@ body p {
   background-color: hsl(27, 66%, 92%);
   width: 100vw;
   height: 100vh;
+  max-width: 570px;
   padding: 40px 15px 65px 15px;
   gap: 15px;
   display: flex;
@@ -29,7 +30,8 @@ body p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 24px;
+  padding-left: 20px;
 }
 .container .total .balance {
   display: flex;
@@ -63,9 +65,10 @@ body p {
 }
 .container .semana_container .semana {
   display: flex;
+  justify-content: space-around;
+  width: 100%;
   gap: 12px;
   font-size: 0.9rem;
-  margin-left: 3px;
   margin-bottom: 26px;
   margin-top: 50px;
 }
@@ -84,6 +87,13 @@ body p {
   border-radius: 2px;
   align-items: center;
 }
+.container .semana_container .semana .g_dias:hover {
+  background-color: hsla(10, 79%, 65%, 0.7);
+  cursor: pointer;
+}
+.container .semana_container .semana .grafico_mon {
+  height: 50px;
+}
 .container .semana_container .semana .grafico_thu {
   height: 90px;
 }
@@ -93,6 +103,23 @@ body p {
 .container .semana_container .semana .grafico_wed {
   height: 150px;
   background-color: hsl(186, 34%, 60%);
+}
+.container .semana_container .semana .values {
+  width: 60px;
+  font-family: "DM Sans";
+  font-size: 1rem;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: hsl(25, 47%, 15%);
+  color: white;
+}
+.container .semana_container .semana .grafico_wed:hover {
+  background-color: hsla(186, 34%, 60%, 0.7);
+}
+.container .semana_container .semana .grafico_wed:hover .value_wed {
+  display: block;
 }
 .container .semana_container .semana .grafico_fri {
   height: 68px;
@@ -140,4 +167,85 @@ body p {
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+@media screen and (min-width: 476px) {
+  .container .total {
+    height: 105px;
+    padding: 27px 35px 27px 28px;
+  }
+  .container .total .balance .value {
+    font-size: 1.7rem;
+  }
+  .container .total .balance .balance_txt {
+    font-size: 1rem;
+  }
+  .container .total img {
+    width: 65px;
+  }
+  .container .semana_container {
+    height: 440px;
+    padding: 31px 30px;
+  }
+  .container .semana_container .title {
+    font-size: 1.85rem;
+  }
+  .container .semana_container .semana {
+    font-size: 1rem;
+  }
+  .container .semana_container .semana .g_dias {
+    transform: scaleX(1.2);
+  }
+  .container .semana_container .total_month_container .total_month .total_month_txt {
+    font-size: 1rem;
+  }
+  .container .semana_container .total_month_container .total_month .total_month_value {
+    font-size: 1.9rem;
+  }
+  .container .semana_container .total_month_container .last_month span {
+    font-size: 1.2rem;
+  }
+  .container .semana_container .total_month_container .last_month p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 530px) {
+  .container .total {
+    height: 125px;
+    padding: 30px 39px 30px 32px;
+  }
+  .container .total .balance .value {
+    font-size: 1.8rem;
+  }
+  .container .total .balance .balance_txt {
+    font-size: 1.1rem;
+  }
+  .container .total img {
+    width: 70px;
+  }
+  .container .semana_container {
+    height: 510px;
+    padding: 35px 39px;
+  }
+  .container .semana_container .title {
+    font-size: 2rem;
+  }
+  .container .semana_container .semana {
+    font-size: 1.1rem;
+  }
+  .container .semana_container .semana .g_dias {
+    transform: scaleX(1.5);
+  }
+  .container .semana_container .total_month_container .total_month .total_month_txt {
+    font-size: 1.1rem;
+  }
+  .container .semana_container .total_month_container .total_month .total_month_value {
+    font-size: 2rem;
+  }
+  .container .semana_container .total_month_container .last_month span {
+    font-size: 1.3rem;
+  }
+  .container .semana_container .total_month_container .last_month p {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
