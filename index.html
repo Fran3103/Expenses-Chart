@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/Sass/style.css">
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,40 +27,40 @@
   <p class="title">
     Spending - Last 7 days
   </p>
-  <div class="dias">
+  <div class="semana">
 
-    <div class="mon">
-      <div class="grafico_mon"></div>
+    <div class="mon dias">
+      <div class="grafico_mon g_dias"></div>
       <p>mon</p>
     </div>
 
-    <div class="tue">
-      <div class="grafico_tue"></div>
+    <div class="tue dias ">
+      <div class="grafico_tue g_dias"></div>
       <p>tue</p>
     </div>
 
-    <div class="wed">
-      <div class="grafico_wed"></div>
+    <div class="wed dias">
+      <div class="grafico_wed g_dias"></div>
       <p>wed</p>
     </div>
 
-    <div class="thu">
-      <div class="grafico_thu"></div>
+    <div class="thu dias">
+      <div class="grafico_thu g_dias"></div>
       <p>thu</p>
     </div>
 
-    <div class="fri">
-      <div class="grafico_mon"></div>
+    <div class="fri dias">
+      <div class="grafico_fri g_dias"></div>
       <p>fri</p>
     </div>
 
-    <div class="sat">
-      <div class="grafico_mon"></div>
+    <div class="sat dias">
+      <div class="grafico_sat g_dias"></div>
       <p>sat</p>
     </div>
 
-    <div class="sun">
-      <div class="grafico_mon"></div>
+    <div class="sun dias">
+      <div class="grafico_sun g_dias"></div>
       <p>sun</p>
     </div>
 
@@ -69,13 +69,13 @@
 <hr>
 <div class="total_month_container">
   <div class="total_month">
-    <p>Total this month</p>
-    <p>$478.33</p>
+    <p class="total_month_txt">Total this month</p>
+    <p class="total_month_value">$478.33</p>
 
   </div>
 
   <div class="last_month">
-    <p class="porcentaje"> <span>+2.4%</span> from last month</p>
+    <p class="porcentaje"> <span>+2.4%</span> <br> from last month</p>
   
   </div>
 </div>
