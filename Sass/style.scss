@@ -120,15 +120,47 @@ body{
                 background-color: $Cyan;
             }
             .values{
-                width: 60px;
+                display: none;
+                
                 font-family: $font;
-                font-size: 1rem;
-                height: 30px;
+                font-size: 0.7rem;
+                
                 text-align: center;
-                padding: 5px;
+                padding: 6px;
                 border-radius:3px ;
                 background-color: $Darkbrown;
                 color: white;
+            }
+            .values:hover{
+                cursor: pointer;
+            }
+            .value_mon{
+                position: absolute;
+                top: 300px;
+            }
+            .value_tue{
+                position: absolute;
+                top: 250px;
+            }
+            .value_wed{
+                position: absolute;
+                top: 200px;
+            }
+            .value_thu{
+                position: absolute;
+                top: 260px;
+            }
+            .value_fri{
+                position: absolute;
+                top: 280px;
+            }
+            .value_sat{
+                position: absolute;
+                top: 220px;
+            }
+            .value_sun{
+                position: absolute;
+                top: 275px;
             }
             .grafico_wed:hover{
                 background-color: hsl(186, 34%, 60%, 0.7);
@@ -205,6 +237,7 @@ body{
 
 
 .container{
+        margin-top: 80px;
 
     .total{
         height: 105px;
@@ -231,9 +264,36 @@ body{
         }
         .semana{
             font-size: 1rem;
+            .values{
+                font-size: 0.8rem;
+            }
             .g_dias{
                 transform: scaleX(1.2);
                 }
+                .value_mon{
+                    top: 350px;
+                }
+                .value_tue{
+                    top: 300px;
+                }
+                .value_wed{
+                    top: 250px;
+                }
+                .value_thu{
+                    top: 310px;
+                }
+                .value_fri{
+                    top: 330px;
+                }
+                .value_sat{
+                    top: 280px;
+                }
+                .value_sun{
+                    top: 325px;
+                }
+
+            
+            
             }
 
             .total_month_container{
@@ -263,6 +323,7 @@ body{
 @media screen and (min-width:530px) {
 
     .container{
+        margin-top: 180px;
 
         .total{
             height: 125px;
@@ -288,9 +349,33 @@ body{
                 font-size: 2rem;
             }
             .semana{
+                .values{
+                    font-size: 0.9rem;
+                }
                 font-size: 1.1rem;
                 .g_dias{
                     transform: scaleX(1.5);
+                    }
+                    .value_mon{
+                        top: 410px;
+                    }
+                    .value_tue{
+                        top: 360px;
+                    }
+                    .value_wed{
+                        top: 320px;
+                    }
+                    .value_thu{
+                        top: 370px;
+                    }
+                    .value_fri{
+                        top: 390px;
+                    }
+                    .value_sat{
+                        top: 340px;
+                    }
+                    .value_sun{
+                        top: 385px;
                     }
                 }
 

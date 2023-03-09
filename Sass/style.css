@@ -105,15 +105,45 @@ body p {
   background-color: hsl(186, 34%, 60%);
 }
 .container .semana_container .semana .values {
-  width: 60px;
+  display: none;
   font-family: "DM Sans";
-  font-size: 1rem;
-  height: 30px;
+  font-size: 0.7rem;
   text-align: center;
-  padding: 5px;
+  padding: 6px;
   border-radius: 3px;
   background-color: hsl(25, 47%, 15%);
   color: white;
+}
+.container .semana_container .semana .values:hover {
+  cursor: pointer;
+}
+.container .semana_container .semana .value_mon {
+  position: absolute;
+  top: 300px;
+}
+.container .semana_container .semana .value_tue {
+  position: absolute;
+  top: 250px;
+}
+.container .semana_container .semana .value_wed {
+  position: absolute;
+  top: 200px;
+}
+.container .semana_container .semana .value_thu {
+  position: absolute;
+  top: 260px;
+}
+.container .semana_container .semana .value_fri {
+  position: absolute;
+  top: 280px;
+}
+.container .semana_container .semana .value_sat {
+  position: absolute;
+  top: 220px;
+}
+.container .semana_container .semana .value_sun {
+  position: absolute;
+  top: 275px;
 }
 .container .semana_container .semana .grafico_wed:hover {
   background-color: hsla(186, 34%, 60%, 0.7);
@@ -170,6 +200,9 @@ body p {
 }
 
 @media screen and (min-width: 476px) {
+  .container {
+    margin-top: 80px;
+  }
   .container .total {
     height: 105px;
     padding: 27px 35px 27px 28px;
@@ -193,8 +226,32 @@ body p {
   .container .semana_container .semana {
     font-size: 1rem;
   }
+  .container .semana_container .semana .values {
+    font-size: 0.8rem;
+  }
   .container .semana_container .semana .g_dias {
     transform: scaleX(1.2);
+  }
+  .container .semana_container .semana .value_mon {
+    top: 350px;
+  }
+  .container .semana_container .semana .value_tue {
+    top: 300px;
+  }
+  .container .semana_container .semana .value_wed {
+    top: 250px;
+  }
+  .container .semana_container .semana .value_thu {
+    top: 310px;
+  }
+  .container .semana_container .semana .value_fri {
+    top: 330px;
+  }
+  .container .semana_container .semana .value_sat {
+    top: 280px;
+  }
+  .container .semana_container .semana .value_sun {
+    top: 325px;
   }
   .container .semana_container .total_month_container .total_month .total_month_txt {
     font-size: 1rem;
@@ -210,6 +267,9 @@ body p {
   }
 }
 @media screen and (min-width: 530px) {
+  .container {
+    margin-top: 180px;
+  }
   .container .total {
     height: 125px;
     padding: 30px 39px 30px 32px;
@@ -233,8 +293,32 @@ body p {
   .container .semana_container .semana {
     font-size: 1.1rem;
   }
+  .container .semana_container .semana .values {
+    font-size: 0.9rem;
+  }
   .container .semana_container .semana .g_dias {
     transform: scaleX(1.5);
+  }
+  .container .semana_container .semana .value_mon {
+    top: 410px;
+  }
+  .container .semana_container .semana .value_tue {
+    top: 360px;
+  }
+  .container .semana_container .semana .value_wed {
+    top: 320px;
+  }
+  .container .semana_container .semana .value_thu {
+    top: 370px;
+  }
+  .container .semana_container .semana .value_fri {
+    top: 390px;
+  }
+  .container .semana_container .semana .value_sat {
+    top: 340px;
+  }
+  .container .semana_container .semana .value_sun {
+    top: 385px;
   }
   .container .semana_container .total_month_container .total_month .total_month_txt {
     font-size: 1.1rem;
